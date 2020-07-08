@@ -15,9 +15,13 @@ tfamd /bin/bash
 Since:
 
 /audio: on your machine represents the folder containing .wav files for training
+
 /home/user/deepSpeechData/checkpoints: the place you'll save checkpoints on your host
+
 /home/user/deepSpeechData/model_export: the place you'll save trained model
 
+
+-------
 
 When container is up and running, you can start the training, remember to change the parameter as your needs, the following are just a sample:
 
