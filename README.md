@@ -1,4 +1,4 @@
-# deepspeech-rocm
+# Deepspeech-rocm
 Docker file sample for deepspeech training based on ROCm for compatible AMD GPUs 
 ---------------------
 After build the image,you can run the container as follow:
@@ -14,11 +14,9 @@ javelar/deepspeech-rocm /bin/bash
 
 Since:
 
-/audio: on your machine represents the folder containing .wav files for training
-
-/home/user/deepSpeechData/checkpoints: the place you'll save checkpoints on your host
-
-/home/user/deepSpeechData/model_export: the place you'll save trained model
+/audio: on your machine represents the folder containing .wav files for training \
+/home/user/deepSpeechData/checkpoints: the place you'll save checkpoints on your host \
+/home/user/deepSpeechData/model_export: the place you'll save trained model \
 
 
 -------
@@ -42,4 +40,14 @@ python3 -u DeepSpeech.py   \
 --checkpoint_dir /dps/checkpoints/   \
 --export_dir /dps/model_export/   
 ```
+[Command-line flags for the training scripts](https://deepspeech.readthedocs.io/en/latest/Flags.html#command-line-flags-for-the-training-scripts)
+
+-------
+### Useful Links:
+[ROCm documentation](https://rocmdocs.amd.com/en/latest/#) \
+[ROCm Project](https://github.com/RadeonOpenCompute/ROCm) \
+\
+[DeepSpeech documentation](https://deepspeech.readthedocs.io/en/latest/)\
+[DeepSpeech Project](https://github.com/mozilla/DeepSpeech)
+
 
