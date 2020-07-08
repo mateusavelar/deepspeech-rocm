@@ -24,9 +24,9 @@ python3 -u DeepSpeech.py   \
 --train_files /audio/pt/clips/train.csv   \
 --dev_files /audio/pt/clips/dev.csv   \
 --test_files /audio/pt/clips/test.csv   \
---train_batch_size 2   \
---dev_batch_size 18   \
---test_batch_size 10   \
+--train_batch_size 4   \
+--dev_batch_size 4   \
+--test_batch_size 4   \
 --n_hidden 1024   \
 --epochs 75   \
 --learning_rate 0.001   \
