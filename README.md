@@ -9,7 +9,7 @@ docker run -it --network=host --device=/dev/kfd --device=/dev/dri \
 -v /audio:/audio \
 -v /home/user/deepSpeechData/checkpoints:/dps/checkpoints/ \
 -v /home/user/deepSpeechData/model_export:/dps/model_export/ \
-tfamd /bin/bash
+javelar/deepspeech-rocm /bin/bash
 ```
 
 Since:
