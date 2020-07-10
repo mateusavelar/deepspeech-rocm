@@ -35,6 +35,7 @@ RUN git lfs install
 RUN git clone --branch v0.9.0-alpha.2 https://github.com/mozilla/DeepSpeech
 
 WORKDIR /DeepSpeech
+
 RUN sed -i "s|tensorflow == 1.15.2|tensorflow == 1.15.0|g" /DeepSpeech/setup.py
 
 RUN pip3 install --upgrade pip==20.0.2 wheel==0.34.2 setuptools==46.1.3 
