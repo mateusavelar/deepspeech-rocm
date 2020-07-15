@@ -32,7 +32,7 @@ ENV LC_ALL='en_US.UTF-8'
 WORKDIR /
 
 RUN git lfs install
-RUN git clone --branch v0.7.4 https://github.com/mozilla/DeepSpeech
+RUN git clone --branch v0.8.0-alpha.7 https://github.com/mozilla/DeepSpeech
 
 WORKDIR /DeepSpeech
 
